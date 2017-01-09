@@ -30,9 +30,23 @@ include: ['_pages']
 # markdown: kramdown
 kramdown:
   input: GFM
-# theme: minima
-# gems:
-#   - jekyll-feed
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
+
+# Customized variables
+research_interests:
+  - data streaming
+  - online social networking
+  - lightweight scheduling algorithms for crossbar switches, and data center networks
+
+advisor:
+  MS:
+    name: Zuqing Zhu
+    url: http://www.zuqingzhu.info/
+  PhD:
+    name: Jun (Jim) Xu
+    url: http://www.cc.gatech.edu/~jx/
+
+author:
+  full_name: Long Gong
+  email: gonglong.gatech@gmail.com
+  url: http://cc.gatech.edu/~lgong30
+

@@ -1,32 +1,217 @@
-/*!
- * Start Bootstrap - Shop Item (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
+/* most contents are copied from Internet */
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab);
+
 
 body {
-    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif; 
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    /* font-family: 'Josefin Slab';*/
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
 }
 
-/*.thumbnail img {
-    width: 100%;
-}
-
-.ratings {
-    padding-right: 10px;
-    padding-left: 10px;
-    color: #d17581;
-}
-
-.thumbnail {
-    padding: 0;
-}
-
-.thumbnail .caption-full {
-    padding: 9px;
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 800;
     color: #333;
-}*/
+}
 
-footer {
-    margin: 50px 0;
+h1 {
+    font-size: 38px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Paragraph & Typographic */
+p {
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* +++++ WRAP SECTIONS +++++ */
+
+#ww {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #f2f2f2;
+}
+
+
+#footer {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+
+  padding: 55px 50px;
+  margin-top: 80px;
+}
+
+.footer-left, .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#footer p {
+    color: white;
+}
+
+#footer h4 {
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.footer-left{
+  width: 49%;
+}
+
+.footer-left i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-left i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-left p{
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-left p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-left p a{
+  color:  #5383d3;
+  text-decoration: none;;
+}
+
+.footer-right{
+  width: 49%;
+}
+
+.footer-template-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-template-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-icons{
+  margin-top: 25px;
+}
+
+.footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* emphasized text */
+.emphasis {
+    font-family: 'Josefin Slab';
+    font-size:120%;
+    text-align: justify;
+}
+.centered {
+    text-align: center;
+}
+
+/* cycle ICON */
+.circle {
+    display: inline-block;
+    width: 300px;
+    height:300px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    padding: 5px;
+    background:#fff;
+}
+.inner {
+    background-image: url(../assets/img/long.jpg);
+    background-size:cover;
+    background-position:center center;
+    height: 100%;
+    border-radius:50%;
+}
+
+/* Side notes for calling out things
+-------------------------------------------------- */
+/* copied from https://gist.github.com/matthiasg/6153853 */
+/* Base styles (regardless of theme) */
+.bs-callout {
+  margin: 20px 0;
+  padding: 15px 30px 15px 15px;
+  border-left: 5px solid #eee;
+}
+.bs-callout h4 {
+  margin-top: 0;
+}
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+.bs-callout code,
+.bs-callout .highlight {
+  background-color: #fff;
+}
+
+/* Themes for different contexts */
+.bs-callout-danger {
+  background-color: #fcf2f2;
+  border-color: #dFb5b4;
+}
+.bs-callout-warning {
+  background-color: #fefbed;
+  border-color: #f1e7bc;
+}
+.bs-callout-info {
+  background-color: #f0f7fd;
+  border-color: #d0e3f0;
 }
