@@ -25,3 +25,8 @@
 
 <!-- Bootstrap Core JavaScript -->
 <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+
+<!-- custom js -->
+{% for script in page.scripts %}
+<script type="text/javascript" src="{{'/js/' | append: script | prepend: site.baseurl }}"></script>
+{% endfor %}
