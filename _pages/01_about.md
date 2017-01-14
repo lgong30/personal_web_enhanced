@@ -1,10 +1,8 @@
 ---
-layout: page
+layout: about
 title: About
 permalink: /about/
+styles: [resumecard.css]
 ---
 
-About content goes here.
 
-* A list item
-* Another list item

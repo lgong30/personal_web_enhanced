@@ -21,7 +21,7 @@
 
 <!-- jQuery -->
 <script src="{{ "/js/jquery.js" | prepend: site.baseurl }}"></script>
-<script src="{{ "/js/nav.js" | prepend: site.baseurl }}"></script>
+
 
 <!-- Bootstrap Core JavaScript -->
 <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
@@ -30,3 +30,5 @@
 {% for script in page.scripts %}
 <script type="text/javascript" src="{{'/js/' | append: script | prepend: site.baseurl }}"></script>
 {% endfor %}
+<script src="{{ "/js/nav.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/sidebar.js" | prepend: site.baseurl }}"></script>

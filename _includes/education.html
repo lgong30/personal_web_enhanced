@@ -1,0 +1,46 @@
+
+<!-- Education Panel -->
+<h1 class="title with-icon"><span class="fa fa-book cat-title"></span><em>Education</em></h1>
+<ul class="timeline">
+    {% for education in site.education %}
+    <li class="timeline-inverted">
+        {% if education.started %}
+        <div class="timeline-badge info">{{ education.started }}</div>
+        {% endif %}
+        <div class="timeline-panel grid-block">
+            <div class="timeline-heading">
+                {% if education.institution %}
+                <h3 class="timeline-title">{{ education.institution }}</h3>
+                <hr/>
+                {% endif %}
+                <span class="span-left">
+                    <small class="text-muted">
+                        {% if education.degree %}
+                        {{ education.degree }}
+                        {% endif %}
+                        {% if education.major %}
+                        , {{ education.major }}
+                        {% endif %}
+                    </small>
+                </span>
+                <span class="span-right">
+                    <small class="text-muted">
+                        {% if education.duration %}
+                        <i class="fa fa-calendar"></i> {{ education.duration }} |
+                        {% endif %}
+                        {% if education.address %}
+                        <i class="fa fa-map-marker"></i>  {{ education.address }}
+                        {% endif %}
+                    </small>
+                </span>
+            </div>
+            <!--<div class="timeline-body">-->
+                <!--{% if education.description %}-->
+                <!--<p>{{ education.description }}</p>-->
+                <!--{% endif %}-->
+            <!--</div>-->
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+

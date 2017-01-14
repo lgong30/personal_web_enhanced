@@ -64,6 +64,31 @@ author:
   email: gonglong.gatech@gmail.com
   url: http://cc.gatech.edu/~lgong30
 
+education:
+  - edu1:
+    institution: University of Science and Technology of China (USTC)
+    address: Hefei, Anhui, China
+    degree: B.E.
+    major: Electronic Enginerring
+    started: 2008
+    duration: (2005 - 2012)
+    description: ""
+  - edu2:
+    institution: University of Science and Technology of China (USTC)
+    address: Hefei, Anhui, China
+    degree: M.E.
+    major: Electronic Enginerring
+    started: 2012
+    duration: (2012 - 2015)
+    description: ""
+  - edu3:
+    institution: Georgia Institution of Technology
+    address: Atlanta, GA, USA 
+    degree: PhD
+    major: Computer Science
+    started: 2015
+    duration: (2015 - Present)
+    description: ""
 
 # Gems
 gems: [jekyll-paginate]
