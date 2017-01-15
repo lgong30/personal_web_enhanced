@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Table and Figure Side by Side
-tags:  [Latex]
-categories: [Skill]
+tags:  [latex]
+categories: [skill]
 author: Long Gong
 excerpt: "Simple ways to place tables and figures side by side in Latex"
 ---
@@ -46,7 +46,7 @@ you want your mixed results occupy both of the columns.
 minipage Based Solution
 ---
 
-```
+```TeX
 \begin{figure}
 \centering
 \begin{minipage}{0.5\textwidth}
