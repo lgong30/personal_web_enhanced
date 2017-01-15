@@ -32,9 +32,10 @@ sass:
   sass_dir: _sass
   style: compressed
 include: ['_pages']
-# markdown: kramdown
-kramdown:
-  input: GFM
+
+markdown: kramdown
+#kramdown:
+#  input: GFM
 highlighter: rouge
 
 
