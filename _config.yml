@@ -18,7 +18,7 @@
 version: "1.0"
 
 
-title: First Jekyll Project
+title: Long Gong@CS.GaTech
 email: gonglong.gatech@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   First play with Jekyll.
@@ -26,7 +26,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://localhost:8089" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: lgong30
 github_username:  lgong30
-
+duoshuo_shortname: lgong
 # Build settings
 sass:
   sass_dir: _sass

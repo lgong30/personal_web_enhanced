@@ -19,7 +19,7 @@ layout: default
                 </h3>
                 <ul class="info">
                     <li>Author：<span class="author">{{ page.author }}</span></li>
-                    <li>Last Edited：{{ page.date | date: "%Y-%m-%d" }}</li>
+                    <li>Last Edited：{{ page.date | date: "%m-%d-%Y" }}</li>
                     <li>Tags：
                         {% for tag in page.tags %}
                         <a class="tag" href="{{site.baseurl}}/tag/#{{ tag }}">{{ tag }}</a>
