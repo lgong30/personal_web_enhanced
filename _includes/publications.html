@@ -1,0 +1,57 @@
+<!-- Publication Panel -->
+<h1 class="title with-icon"><span class="fa fa-book cat-title"></span><em>Recent Publications</em></h1>
+
+<ul class="timeline">
+    {% for pubs in site.publications %}
+    <li class="timeline-inverted">
+        {% for pub in pubs %}
+            <div class="timeline-badge info">{{ pub[0] }}</div>
+            <div class="timeline-panel grid-block">
+                {% for pubinfo in pub[1] %}
+
+                    <div class="timeline-heading">
+                        {% if pubinfo.title %}
+                        <h3 class="timeline-title">{{ pubinfo.title }}</h3>
+                        <hr/>
+                        {% endif %}
+                        <span class="span-block">
+                            <small class="text-muted">
+                                {% if pubinfo.authors %}
+                                    {% for author in pubinfo.authors %}{% if forloop.first == false %}, {% endif %}{% if author == site.author.full_name %}<B>{{ author }}</B>{% else %}{{ author }}{% endif %}{% endfor %}
+                                {% endif %}
+                            </small>
+                        </span>
+                        <span class="span-block">
+                            <small class="text-muted">
+                                <i class="fa fa-book"></i>
+                                {% if pubinfo.type == "journal" %}
+                                    {{ pubinfo.journal }}
+                                {% else %}
+                                    {{ pubinfo.conference }}
+                                {% endif %} |
+                                {% if pubinfo.pdf %}
+                                <a href="{{ pubinfo.pdf }}"><i class="fa fa-file-pdf-o"> PDF</i></a>
+                                {% endif %} |
+                                {% if pubinfo.url %}
+                                <a href="{{ pubinfo.url }}"><i class="fa fa-gg"> More Info</i></a>
+                                {% endif %}
+                            </small>
+                        </span>
+                    </div>
+                    <div class="timeline-body">
+                    {% if pubinfo.abstract %}
+                    <p hidden>{{ pubinfo.abstract }}</p>
+                    {% endif %}
+                    </div>
+
+                    {% if forloop.last == false %}
+                    <hr class="splitter"/>
+                    {% endif %}
+
+                {% endfor %}
+
+            </div>
+        {% endfor %}
+    </li>
+    {% endfor %}
+</ul>

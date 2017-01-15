@@ -65,14 +65,14 @@ author:
   url: http://cc.gatech.edu/~lgong30
 
 education:
-  - edu1:
-    institution: University of Science and Technology of China (USTC)
-    address: Hefei, Anhui, China
-    degree: B.E.
-    major: Electronic Enginerring
-    started: 2008
-    duration: (2005 - 2012)
-    description: ""
+  - edu3:
+    institution: Georgia Institution of Technology
+    address: Atlanta, GA, USA 
+    degree: PhD
+    major: Computer Science
+    started: 2015
+    duration: (2015 - Present)
+    description: "" 
   - edu2:
     institution: University of Science and Technology of China (USTC)
     address: Hefei, Anhui, China
@@ -81,14 +81,101 @@ education:
     started: 2012
     duration: (2012 - 2015)
     description: ""
-  - edu3:
-    institution: Georgia Institution of Technology
-    address: Atlanta, GA, USA 
-    degree: PhD
-    major: Computer Science
-    started: 2015
-    duration: (2015 - Present)
+  - edu1:
+    institution: University of Science and Technology of China (USTC)
+    address: Hefei, Anhui, China
+    degree: B.E.
+    major: Electronic Enginerring
+    started: 2008
+    duration: (2005 - 2012)
     description: ""
 
+
+
+publications:
+  - 2016: 
+      - pub1:
+        title: Impairment- and Splitting-Aware Cloud-Ready Multicast Provisioning in Elastic Optical Networks
+        authors: ["Zuqing Zhu", "Xiahe Liu", "Yixiang Wang", "Wei Lu", "Long Gong", "Shui Yu", "Nirwan Ansari"]
+        journal: IEEE/ACM Transactions on Networking
+        url: http://ieeexplore.ieee.org/abstract/document/7731159/
+        type: journal
+        pdf: http://zuqingzhu.info/pub_doc/2016/IEEE_TON_RMSA_multicast_Final.pdf
+        abstract: It is known that multicast provisioning is important for supporting cloud-based applications, and as the traffics from these applications are increasing quickly, we may rely on optical networks to realize high-throughput multicast. Meanwhile, the flexible-grid elastic optical networks (EONs) achieve agile access to the massive bandwidth in optical fibers, and hence can provision variable bandwidths to adapt to the dynamic demands from the cloud-based applications. In this paper, we consider all-optical multicast in EONs in a practical manner and focus on designing impairment- and splitting-aware multicast provisioning schemes. We first study the procedure of adaptive modulation selection for a light-tree, and point out that the multicast scheme in EONs is fundamentally different from that in the fixed-grid wavelength-division multiplexing networks. Then, we formulate the problem of impairment- and splitting-aware routing, modulation and spectrum assignment (ISa-RMSA) for all-optical multicast in EONs and analyze its hardness. Next, we analyze the advantages brought by the flexibility of routing structures and discuss the ISa-RMSA schemes based on light-trees and light-forests. This paper suggests that for ISa-RMSA, the light-forest-based approach can use less bandwidth than the light-tree-based one, while still satisfying the quality of transmission requirement. Therefore, we establish the minimum light-forest problem for optimizing a light-forest in ISa-RMSA. Finally, we design several time-efficient ISa-RMSA algorithms, and prove that one of them can solve the minimum light-forest problem with a fixed approximation ratio.
+      - pub2:
+        title: Novel Location-Constrained Virtual Network Embedding (LC-VNE) Algorithms Towards Integrated Node and Link Mapping
+        authors: ["Long Gong", "Huihui Jiang", "Yixiang Wang", "Zuqing Zhu"]
+        journal: IEEE/ACM Transactions on Networking
+        type: journal
+        pdf: http://zuqingzhu.info/pub_doc/2016/07432000.pdf
+        url: http://ieeexplore.ieee.org/document/7432000/
+        abstract: This paper tries to solve the location-constrained virtual network embedding (LC-VNE) problem efficiently. We first investigate the complexity of LC-VNE, and by leveraging the graph bisection problem, we provide the first formal proof of the  -completeness and inapproximability result of LC-VNE. Then, we propose two novel LC-VNE algorithms based on a compatibility graph (CG) to achieve integrated node and link mapping. In particular, in the CG, each node represents a candidate substrate path for a virtual link, and each link indicates the compatible relation between its two endnodes. Our theoretical analysis proves that the maximal clique in the CG is also the maximum one when the substrate network has sufficient resources. With CG, we reduce LC-VNE to the minimum-cost maximum clique problem, which inspires us to propose two efficient LC-VNE heuristics. Extensive numerical simulations demonstrate that compared with the existing ones, our proposed LC-VNE algorithms have significantly reduced time complexity and can provide smaller gaps to the optimal solutions, lower blocking probabilities, and higher time-average revenue as well.
+
+experiences:
+  - exp1:
+    institution: AT&amp;T Labs Research 
+    mentor: ["He Yan", "Zihui Ge"]
+    started: 2016
+    duration: (05/2016 - 07/2016)
+    address: Bedminster, NJ, USA
+    position: Research Intern
+    description: Developed tools to automate the dynamics analysis in services supported by virtualized environment.
+  - exp2:
+    institution: NanYang Technological University
+    mentor: ["Yonggang Wen"]
+    started: 2012
+    duration: (02/2012 - 06/2012)
+    address: Singapore
+    description: Designed a novel virtual network embedding algorithm, which increased the network utilization and decreased the time complexity. (INFOCOM 2014)
+
+programmingSkills:
+  - skill1:
+    name: C/C++
+    percentage: 85%
+    packages:
+      - pack1:
+        name: Google Test 
+        url: https://github.com/google/googletest
+      - pack2:
+        name: LEMON (Graph library)
+        url: https://lemon.cs.elte.hu/trac/lemon
+      - pack3:
+        name: JSON for Modern C++
+        url: https://github.com/nlohmann/json
+      - pack4:
+        name: fmt (formating library for C++)
+        url: https://github.com/fmtlib/fmt
+      - pack5:
+        name: HdrHistogram 
+        url: https://github.com/HdrHistogram/HdrHistogram_c
+  - skill2:
+    name: Python
+    percentage: 75%
+  - skill3:
+    name: MATLAB
+    percentage: 75%
+  - skill4:
+    name: LaTeX
+    percentage: 70%
+  - skill5:
+    name: Java
+    percentage: 50%
+  - skill6:
+    name: PHP, HTML, JavaScript, CSS, Bootstrap
+    percentage: 20%
+
+references:
+  - ref1:
+    name: resumecard
+    url: https://ddbullfrog.github.io/resumecard
+    page: about
+  - ref2:
+    name: Jekyll-pithy
+    url: https://github.com/jaylinwang/jekyll-pithy/tree/gh-pages
+    page: blog
+  - ref3:
+    name: stanley-freelancer-theme
+    url: http://blacktie.co/2014/01/stanley-freelancer-theme/
+    page: home
 # Gems
 gems: [jekyll-paginate]

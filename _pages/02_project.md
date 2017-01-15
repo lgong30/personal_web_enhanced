@@ -4,5 +4,4 @@ title: Project
 permalink: /project/
 ---
 
-Project content goes here.
-
+This page is still under construction

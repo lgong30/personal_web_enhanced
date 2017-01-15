@@ -1,6 +1,6 @@
 
 <!-- Education Panel -->
-<h1 class="title with-icon"><span class="fa fa-book cat-title"></span><em>Education</em></h1>
+<h1 class="title with-icon"><span class="fa fa-graduation-cap cat-title"></span><em>Education</em></h1>
 <ul class="timeline">
     {% for education in site.education %}
     <li class="timeline-inverted">
@@ -19,7 +19,7 @@
                         {{ education.degree }}
                         {% endif %}
                         {% if education.major %}
-                        , {{ education.major }}
+                        in {{ education.major }}
                         {% endif %}
                     </small>
                 </span>

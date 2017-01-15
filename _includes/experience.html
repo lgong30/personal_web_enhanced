@@ -1,0 +1,52 @@
+
+<!-- Experience Panel -->
+<h1 class="title with-icon"><span class="fa fa-graduation-cap cat-title"></span><em>Professional Experience</em></h1>
+
+<ul class="timeline">
+    {% for exp in site.experiences %}
+    <li class="timeline-inverted">
+        {% if exp.started %}
+        <div class="timeline-badge info">{{ exp.started }}</div>
+        {% endif %}
+        <div class="timeline-panel grid-block">
+            <div class="timeline-heading">
+                {% if exp.institution %}
+                <h3 class="timeline-title">{{ exp.institution }}</h3>
+                <hr/>
+                {% endif %}
+                <span class="span-left">
+                    <small class="text-muted">
+                        {% if exp.position %}
+                          {{ exp.position }} |
+                        {% endif %}
+                        Mentor:
+                        {% if exp.mentor %}
+                           {% for m in exp.mentor %}{% if forloop.first == false%}, {% endif %}{{ m }}{% endfor %}
+                        {% endif %}
+                    </small>
+                </span>
+                <span class="span-right">
+                    <small class="text-muted">
+                        {% if exp.duration %}
+                        <i class="fa fa-calendar"></i> {{ exp.duration }} |
+                        {% endif %}
+                        {% if exp.address %}
+                        <i class="fa fa-map-marker"></i>  {{ exp.address }}
+                        {% endif %}
+                        {% if exp.url %}
+                        <a href="{{ exp.url }}"><i class="fa fa-gg">More Info</i></a>
+                        {% endif %}
+                    </small>
+                </span>
+            </div>
+            <hr class="subsplitter"/>
+            <div class="timeline-body">
+            {% if exp.description %}
+            <p>{{ exp.description }}</p>
+            {% endif %}
+            </div>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+

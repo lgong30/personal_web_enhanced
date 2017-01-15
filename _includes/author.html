@@ -2,15 +2,19 @@
     <div class="panel-heading avastar">
         <img src="{{ site.baseurl}}/assets/img/avatar.jpg" alt="Long Gong"/>
     </div>
+    {% if page.title == 'About' %}
     <div class="panel-body">
-        坚持自己的信仰，相信每一个人都有蜕变的那一刻。
+        {% include self_short.html %}
     </div>
+    {% endif %}
     <div class="panel-footer social">
         <ul>
-            <li class="weibo"><a href="http://www.weibo.com/guovz/" alt="新浪微博" target="_blank"><i class="fa fa-weibo"></i></a></li>
-            <li class="github"><a href="https://github.com/guovz" alt="github" target="_blank"><i class="fa fa-github"></i></a></li>
-            <li class="facebook"><a href="https://www.facebook.com/guovz" alt="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-            <li class="rss"><a href="{{ '/feed.xml' | prepend: site.baseurl}}" alt="订阅" target="_blank"><i class="fa fa-rss"></i></a></li>
+            <!--<li class="weibo"><a href="http://www.weibo.com/guovz/" alt="新浪微博" target="_blank"><i class="fa fa-weibo"></i></a></li>-->
+            <li class="github"><a href="https://github.com/lgong30" title="{{ site.author.full_name }}'s Github" alt="github" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li class="facebook"><a href="https://www.facebook.com/long.gong.1253" title="{{ site.author.full_name }}'s Facebook" alt="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li class="google"><a href="https://scholar.google.com/citations?user=qtAikfAAAAAJ&hl=en" title="{{ site.author.full_name }}'s Google Scholar Profile" alt="google scholar" target="_blank"><i class="fa fa-google"></i></a></li>
+            <li class="linkedin"><a href="https://www.linkedin.com/in/long-gong-14292859" title="{{ site.author.full_name }}'s Linkedin Profile" alt="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <!--<li class="rss"><a href="{{ '/feed.xml' | prepend: site.baseurl}}" alt="订阅" target="_blank"><i class="fa fa-rss"></i></a></li>-->
         </ul>
     </div>
 </div>
