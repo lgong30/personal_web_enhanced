@@ -4,6 +4,10 @@ title: Running Time Measurement (C++)
 excerpt: "useful skills"
 tags: [C++]
 categories: [skill]
+author: Long Gong
+---
+
+Run Time Measurement
 ---
 
 ```C++
