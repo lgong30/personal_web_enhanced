@@ -10,7 +10,7 @@ author: Long Gong
 Run Time Measurement
 ---
 
-```C++
+```cpp
 #include <chrono>  
 #define TIMING  
 
@@ -29,5 +29,11 @@ Run Time Measurement
 ```
 
   
-
+```cpp
+#include <iostream>
+int main()
+{
+    std::cout << "Hello World" << std::endl;
+}
+```
 
