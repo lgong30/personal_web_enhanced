@@ -41,6 +41,7 @@ print "while loop: ", timeit.Timer(s, setup=setup).repeat(test_group, test_num)[
 
 
 Measurement results:
+
 ```shell
 splicing:  0.0858380794525
 list creating:  1.06420516968
@@ -73,6 +74,7 @@ print "removing the last element: ", timeit.Timer('del x[-1]', setup=setup).repe
 
 
 Measurement results:
+
 ```shell
 removing first element:  0.0151288509369
 removing the last element:  0.000619888305664
@@ -289,6 +291,7 @@ if __name__ == "__main__":
 ```
 
 Measurement results:
+
 ```shell
 remove_with_move: 1.273
 remove: 0.111
