@@ -15,6 +15,7 @@ import timeit
 
 
 setup = '''
+from copy import deepcopy
 n = 10000
 x = range(n)
 y = range(20,2001)
@@ -32,8 +33,8 @@ while i < 2000:
     i += 1
 '''
 
-print "splicing: ", timeit.Timer('x[20:2000]', setup=setup).repeat(test_group, test_num)[0]
-print "list creating: ", timeit.Timer('[x[i] for i in xrange(20,2001)]', setup=setup).repeat(test_group, test_num)[0]
+print "splicing: ", timeit.Timer('[z for z in x[20:2000]]', setup=setup).repeat(test_group, test_num)[0]
+print "xrange: ", timeit.Timer('[x[i] for i in xrange(20,2001)]', setup=setup).repeat(test_group, test_num)[0]
 print "while loop: ", timeit.Timer(s, setup=setup).repeat(test_group, test_num)[0]
 ```
 
@@ -43,9 +44,9 @@ print "while loop: ", timeit.Timer(s, setup=setup).repeat(test_group, test_num)[
 Measurement results:
 
 ```shell
-splicing:  0.0858380794525
-list creating:  1.06420516968
-while loop:  2.52795004845
+splicing:  0.950579881668
+xrange:  1.10384917259
+while loop:  2.56404590607
 ```
 
 
