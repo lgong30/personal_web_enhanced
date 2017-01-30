@@ -18,7 +18,7 @@ layout: default
                     <i class="fa fa-bookmark-o"></i>{{page.title}}
                 </h3>
                 <ul class="info">
-                    <li>Author：<span class="author">{{ page.author }}</span></li>
+                    <li>Author：<span class="author">{% if page.author %}{{ page.author }}{% else %}{{ site.author.full_name }}{% endif %}</span></li>
                     <li>Last Edited：{{ page.date | date: "%m-%d-%Y" }}</li>
                     <li>Tags：
                         {% for tag in page.tags %}
